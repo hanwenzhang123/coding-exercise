@@ -1,4 +1,4 @@
-# code-challenging
+# coding-exercise
 echo "# code-challenging" >> README.md
 git init
 git add README.md
