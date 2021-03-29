@@ -1,4 +1,4 @@
-"let header = document.querySelector('h1');
+let header = document.querySelector('h1');
 let inputHere = document.querySelector('input');
  
 inputHere.addEventListener('input',()=>{
@@ -6,4 +6,4 @@ inputHere.addEventListener('input',()=>{
     if(inputHere.value === ''){
         header.innerHTML = ""Enter Your Username"";
     }
-})"
+})
