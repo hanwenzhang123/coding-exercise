@@ -24,8 +24,14 @@ Next, change the color of each child paragraph to blue.
 var section = document.querySelector('section');
 var paragraphs = section.children;
 
-for (var i = 0; i < paragraphs.length; i += 1) {
-   paragraphs[i].style.color = "blue";
+for (let i=0; i < paragraphs.length; i++ ) { // Make sure to use semicolons and not commas here
+  paragraphs[i].style.color= 'blue'; // Use paragraphs, not section, since that's the collection you're intending to modify
+}
+
+//opted to use a for/of loop 
+
+for (let p of paragraphs) {
+    p.style.color = 'blue';
 }
 
 
