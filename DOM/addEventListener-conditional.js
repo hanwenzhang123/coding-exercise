@@ -1,3 +1,5 @@
+//click on and off with the event like a switch
+
 let section = document.getElementsByTagName('section')[0];
 
 section.addEventListener('click', (e) => {
