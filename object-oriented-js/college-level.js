@@ -7,17 +7,30 @@ class Student {
     stringGPA() {
         return this.gpa.toString();
     }
-  get level (){
-        let credits = this.credits;
 
-        if (credits > 90) {return 'Senior';}
-
-        else if (credits <= 90 && credits >= 61 ) {return 'Junior';}
-
-        else if (credits <= 60 && credits >= 31) {return 'Sophomore';}
-
-        else if (credits <= 30 ) {return 'Freshman';}
+    get level() {
+        if (this.credits > 90 ) {
+            return 'Senior';
+        } else if (this.credits > 60) {
+            return 'Junior';
+        } else if (this.credits > 30) {
+            return 'Sophomore';
+        } else {
+            return 'Freshman';
+        }
+    }
+  
+  get major(){
+    return this._major
   }
+  
+     set major(major) {
+        this._major = major
+        if (this.level !== 'Senior' && this.level !== 'Junior') {
+            this._major = 'None'
+        }
+     }
 }
 
-const student = new Student(3.9);
+var student = new Student(3.9, 60);
+
