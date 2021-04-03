@@ -1,2 +1,2 @@
 # coding-exercise
-Document some of the coding exercises I have encountered.
+Document some of the coding exercises I have completed.
