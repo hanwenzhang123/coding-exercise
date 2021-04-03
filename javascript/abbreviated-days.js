@@ -6,4 +6,3 @@ const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Fri
 let abbreviatedDays = daysOfWeek.map(days => days.slice(0, 3));
 
 // abbreviatedDays should be: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
-// Write your code below
