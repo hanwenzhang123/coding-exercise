@@ -28,14 +28,14 @@ def show_list():
             
 show_help() # first thing shown on the application
 
-while True:   # this loop will run forever unless something interrupt
+while True:   # while true - always true. this loop will run forever unless something interrupt
   new_item = input ('>')
   
   if new_item == 'DONE':
     break   # when we use break, this loop done
   elif new_item == 'HELP':
     show_help()
-    continue  # continue as when we just enter the application
+    continue  # continue as while true
 # Enable the SHOW command to show the list. Update the HELP document. Make sure to run it. 
    elif new_item == 'SHOW':  
     show_list()
